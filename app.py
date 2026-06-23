@@ -1,12 +1,5 @@
 from fastapi import FastAPI, Query
-
-# IMPORTANT:
-# Change this import to match YOUR actual file name
-# examples: from main import handle_query
-#           from pokedex import handle_query
-#           from assistant_core import handle_query
-
-from main import handle_query  # <-- CHANGE THIS LINE IF NEEDED
+from core.assistant import interactive_handle
 
 app = FastAPI()
 
@@ -23,11 +16,13 @@ def root():
 @app.get("/query")
 def query(q: str = Query(..., description="Pokémon query string")):
     try:
-        result = handle_query(q)
+        response, _context = interactive_handle(q, None)
+
         return {
             "query": q,
-            "result": result
+            "result": response
         }
+
     except Exception as e:
         return {
             "query": q,
