@@ -1,0 +1,3327 @@
+[
+  {
+    "game": "red",
+    "gym_number": 1,
+    "leader": "Brock",
+    "city": "Pewter City",
+    "type": "Rock",
+    "badge": "Boulder Badge",
+    "team": [
+      "Geodude",
+      "Onix"
+    ]
+  },
+  {
+    "game": "red",
+    "gym_number": 2,
+    "leader": "Misty",
+    "city": "Cerulean City",
+    "type": "Water",
+    "badge": "Cascade Badge",
+    "team": [
+      "Staryu",
+      "Starmie"
+    ]
+  },
+  {
+    "game": "red",
+    "gym_number": 3,
+    "leader": "Lt. Surge",
+    "city": "Vermilion City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Pikachu",
+      "Raichu"
+    ]
+  },
+  {
+    "game": "red",
+    "gym_number": 4,
+    "leader": "Erika",
+    "city": "Celadon City",
+    "type": "Grass",
+    "badge": "Rainbow Badge",
+    "team": [
+      "Victreebel",
+      "Tangela",
+      "Vileplume",
+      "Weepinbell"
+    ]
+  },
+  {
+    "game": "red",
+    "gym_number": 5,
+    "leader": "Koga",
+    "city": "Fuchsia City",
+    "type": "Poison",
+    "badge": "Soul Badge",
+    "team": [
+      "Koffing",
+      "Muk",
+      "Koffing",
+      "Weezing"
+    ]
+  },
+  {
+    "game": "red",
+    "gym_number": 6,
+    "leader": "Sabrina",
+    "city": "Saffron City",
+    "type": "Psychic",
+    "badge": "Marsh Badge",
+    "team": [
+      "Abra",
+      "Mr. Mime",
+      "Venomoth",
+      "Alakazam"
+    ]
+  },
+  {
+    "game": "red",
+    "gym_number": 7,
+    "leader": "Blaine",
+    "city": "Cinnabar Island",
+    "type": "Fire",
+    "badge": "Volcano Badge",
+    "team": [
+      "Growlithe",
+      "Ponyta",
+      "Rapidash",
+      "Arcanine"
+    ]
+  },
+  {
+    "game": "red",
+    "gym_number": 8,
+    "leader": "Giovanni",
+    "city": "Viridian City",
+    "type": "Ground",
+    "badge": "Earth Badge",
+    "team": [
+      "Rhyhorn",
+      "Dugtrio",
+      "Nidoqueen",
+      "Nidoking",
+      "Rhydon"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 1,
+    "leader": "Brock",
+    "city": "Pewter City",
+    "type": "Rock",
+    "badge": "Boulder Badge",
+    "team": [
+      "Geodude",
+      "Onix"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 2,
+    "leader": "Misty",
+    "city": "Cerulean City",
+    "type": "Water",
+    "badge": "Cascade Badge",
+    "team": [
+      "Staryu",
+      "Starmie"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 3,
+    "leader": "Lt. Surge",
+    "city": "Vermilion City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Pikachu",
+      "Raichu"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 4,
+    "leader": "Erika",
+    "city": "Celadon City",
+    "type": "Grass",
+    "badge": "Rainbow Badge",
+    "team": [
+      "Victreebel",
+      "Tangela",
+      "Vileplume",
+      "Weepinbell"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 5,
+    "leader": "Koga",
+    "city": "Fuchsia City",
+    "type": "Poison",
+    "badge": "Soul Badge",
+    "team": [
+      "Koffing",
+      "Muk",
+      "Koffing",
+      "Weezing"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 6,
+    "leader": "Sabrina",
+    "city": "Saffron City",
+    "type": "Psychic",
+    "badge": "Marsh Badge",
+    "team": [
+      "Abra",
+      "Mr. Mime",
+      "Venomoth",
+      "Alakazam"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 7,
+    "leader": "Blaine",
+    "city": "Cinnabar Island",
+    "type": "Fire",
+    "badge": "Volcano Badge",
+    "team": [
+      "Growlithe",
+      "Ponyta",
+      "Rapidash",
+      "Arcanine"
+    ]
+  },
+  {
+    "game": "blue",
+    "gym_number": 8,
+    "leader": "Giovanni",
+    "city": "Viridian City",
+    "type": "Ground",
+    "badge": "Earth Badge",
+    "team": [
+      "Rhyhorn",
+      "Dugtrio",
+      "Nidoqueen",
+      "Nidoking",
+      "Rhydon"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 1,
+    "leader": "Brock",
+    "city": "Pewter City",
+    "type": "Rock",
+    "badge": "Boulder Badge",
+    "team": [
+      "Geodude",
+      "Onix"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 2,
+    "leader": "Misty",
+    "city": "Cerulean City",
+    "type": "Water",
+    "badge": "Cascade Badge",
+    "team": [
+      "Staryu",
+      "Starmie"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 3,
+    "leader": "Lt. Surge",
+    "city": "Vermilion City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Pikachu",
+      "Raichu"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 4,
+    "leader": "Erika",
+    "city": "Celadon City",
+    "type": "Grass",
+    "badge": "Rainbow Badge",
+    "team": [
+      "Victreebel",
+      "Tangela",
+      "Vileplume",
+      "Weepinbell"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 5,
+    "leader": "Koga",
+    "city": "Fuchsia City",
+    "type": "Poison",
+    "badge": "Soul Badge",
+    "team": [
+      "Koffing",
+      "Muk",
+      "Koffing",
+      "Weezing"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 6,
+    "leader": "Sabrina",
+    "city": "Saffron City",
+    "type": "Psychic",
+    "badge": "Marsh Badge",
+    "team": [
+      "Abra",
+      "Mr. Mime",
+      "Venomoth",
+      "Alakazam"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 7,
+    "leader": "Blaine",
+    "city": "Cinnabar Island",
+    "type": "Fire",
+    "badge": "Volcano Badge",
+    "team": [
+      "Growlithe",
+      "Ponyta",
+      "Rapidash",
+      "Arcanine"
+    ]
+  },
+  {
+    "game": "green",
+    "gym_number": 8,
+    "leader": "Giovanni",
+    "city": "Viridian City",
+    "type": "Ground",
+    "badge": "Earth Badge",
+    "team": [
+      "Rhyhorn",
+      "Dugtrio",
+      "Nidoqueen",
+      "Nidoking",
+      "Rhydon"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 1,
+    "leader": "Brock",
+    "city": "Pewter City",
+    "type": "Rock",
+    "badge": "Boulder Badge",
+    "team": [
+      "Geodude",
+      "Onix"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 2,
+    "leader": "Misty",
+    "city": "Cerulean City",
+    "type": "Water",
+    "badge": "Cascade Badge",
+    "team": [
+      "Staryu",
+      "Starmie"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 3,
+    "leader": "Lt. Surge",
+    "city": "Vermilion City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Pikachu",
+      "Raichu"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 4,
+    "leader": "Erika",
+    "city": "Celadon City",
+    "type": "Grass",
+    "badge": "Rainbow Badge",
+    "team": [
+      "Victreebel",
+      "Tangela",
+      "Vileplume",
+      "Weepinbell"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 5,
+    "leader": "Koga",
+    "city": "Fuchsia City",
+    "type": "Poison",
+    "badge": "Soul Badge",
+    "team": [
+      "Koffing",
+      "Muk",
+      "Koffing",
+      "Weezing"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 6,
+    "leader": "Sabrina",
+    "city": "Saffron City",
+    "type": "Psychic",
+    "badge": "Marsh Badge",
+    "team": [
+      "Abra",
+      "Mr. Mime",
+      "Venomoth",
+      "Alakazam"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 7,
+    "leader": "Blaine",
+    "city": "Cinnabar Island",
+    "type": "Fire",
+    "badge": "Volcano Badge",
+    "team": [
+      "Growlithe",
+      "Ponyta",
+      "Rapidash",
+      "Arcanine"
+    ]
+  },
+  {
+    "game": "yellow",
+    "gym_number": 8,
+    "leader": "Giovanni",
+    "city": "Viridian City",
+    "type": "Ground",
+    "badge": "Earth Badge",
+    "team": [
+      "Rhyhorn",
+      "Dugtrio",
+      "Nidoqueen",
+      "Nidoking",
+      "Rhydon"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 1,
+    "leader": "Brock",
+    "city": "Pewter City",
+    "type": "Rock",
+    "badge": "Boulder Badge",
+    "team": [
+      "Geodude",
+      "Onix"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 2,
+    "leader": "Misty",
+    "city": "Cerulean City",
+    "type": "Water",
+    "badge": "Cascade Badge",
+    "team": [
+      "Staryu",
+      "Starmie"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 3,
+    "leader": "Lt. Surge",
+    "city": "Vermilion City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Pikachu",
+      "Raichu"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 4,
+    "leader": "Erika",
+    "city": "Celadon City",
+    "type": "Grass",
+    "badge": "Rainbow Badge",
+    "team": [
+      "Victreebel",
+      "Tangela",
+      "Vileplume",
+      "Weepinbell"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 5,
+    "leader": "Koga",
+    "city": "Fuchsia City",
+    "type": "Poison",
+    "badge": "Soul Badge",
+    "team": [
+      "Koffing",
+      "Muk",
+      "Koffing",
+      "Weezing"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 6,
+    "leader": "Sabrina",
+    "city": "Saffron City",
+    "type": "Psychic",
+    "badge": "Marsh Badge",
+    "team": [
+      "Abra",
+      "Mr. Mime",
+      "Venomoth",
+      "Alakazam"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 7,
+    "leader": "Blaine",
+    "city": "Cinnabar Island",
+    "type": "Fire",
+    "badge": "Volcano Badge",
+    "team": [
+      "Growlithe",
+      "Ponyta",
+      "Rapidash",
+      "Arcanine"
+    ]
+  },
+  {
+    "game": "firered",
+    "gym_number": 8,
+    "leader": "Giovanni",
+    "city": "Viridian City",
+    "type": "Ground",
+    "badge": "Earth Badge",
+    "team": [
+      "Rhyhorn",
+      "Dugtrio",
+      "Nidoqueen",
+      "Nidoking",
+      "Rhydon"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 1,
+    "leader": "Brock",
+    "city": "Pewter City",
+    "type": "Rock",
+    "badge": "Boulder Badge",
+    "team": [
+      "Geodude",
+      "Onix"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 2,
+    "leader": "Misty",
+    "city": "Cerulean City",
+    "type": "Water",
+    "badge": "Cascade Badge",
+    "team": [
+      "Staryu",
+      "Starmie"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 3,
+    "leader": "Lt. Surge",
+    "city": "Vermilion City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Pikachu",
+      "Raichu"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 4,
+    "leader": "Erika",
+    "city": "Celadon City",
+    "type": "Grass",
+    "badge": "Rainbow Badge",
+    "team": [
+      "Victreebel",
+      "Tangela",
+      "Vileplume",
+      "Weepinbell"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 5,
+    "leader": "Koga",
+    "city": "Fuchsia City",
+    "type": "Poison",
+    "badge": "Soul Badge",
+    "team": [
+      "Koffing",
+      "Muk",
+      "Koffing",
+      "Weezing"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 6,
+    "leader": "Sabrina",
+    "city": "Saffron City",
+    "type": "Psychic",
+    "badge": "Marsh Badge",
+    "team": [
+      "Abra",
+      "Mr. Mime",
+      "Venomoth",
+      "Alakazam"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 7,
+    "leader": "Blaine",
+    "city": "Cinnabar Island",
+    "type": "Fire",
+    "badge": "Volcano Badge",
+    "team": [
+      "Growlithe",
+      "Ponyta",
+      "Rapidash",
+      "Arcanine"
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "gym_number": 8,
+    "leader": "Giovanni",
+    "city": "Viridian City",
+    "type": "Ground",
+    "badge": "Earth Badge",
+    "team": [
+      "Rhyhorn",
+      "Dugtrio",
+      "Nidoqueen",
+      "Nidoking",
+      "Rhydon"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 1,
+    "leader": "Falkner",
+    "city": "Violet City",
+    "type": "Flying",
+    "badge": "Zephyr Badge",
+    "team": [
+      "Pidgey",
+      "Pidgeotto"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 2,
+    "leader": "Bugsy",
+    "city": "Azalea Town",
+    "type": "Bug",
+    "badge": "Hive Badge",
+    "team": [
+      "Metapod",
+      "Kakuna",
+      "Scyther"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 3,
+    "leader": "Whitney",
+    "city": "Goldenrod City",
+    "type": "Normal",
+    "badge": "Plain Badge",
+    "team": [
+      "Clefairy",
+      "Miltank"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 4,
+    "leader": "Morty",
+    "city": "Ecruteak City",
+    "type": "Ghost",
+    "badge": "Fog Badge",
+    "team": [
+      "Gastly",
+      "Haunter",
+      "Gengar"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 5,
+    "leader": "Chuck",
+    "city": "Cianwood City",
+    "type": "Fighting",
+    "badge": "Storm Badge",
+    "team": [
+      "Primeape",
+      "Poliwrath",
+      "Kingler"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 6,
+    "leader": "Jasmine",
+    "city": "Olivine City",
+    "type": "Steel",
+    "badge": "Mineral Badge",
+    "team": [
+      "Magnemite",
+      "Magnemite",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 7,
+    "leader": "Pryce",
+    "city": "Mahogany Town",
+    "type": "Ice",
+    "badge": "Glacier Badge",
+    "team": [
+      "Seel",
+      "Dewgong",
+      "Piloswine"
+    ]
+  },
+  {
+    "game": "gold",
+    "gym_number": 8,
+    "leader": "Clair",
+    "city": "Blackthorn City",
+    "type": "Dragon",
+    "badge": "Rising Badge",
+    "team": [
+      "Dragonair",
+      "Dragonair",
+      "Dragonair",
+      "Kingdra"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 1,
+    "leader": "Falkner",
+    "city": "Violet City",
+    "type": "Flying",
+    "badge": "Zephyr Badge",
+    "team": [
+      "Pidgey",
+      "Pidgeotto"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 2,
+    "leader": "Bugsy",
+    "city": "Azalea Town",
+    "type": "Bug",
+    "badge": "Hive Badge",
+    "team": [
+      "Metapod",
+      "Kakuna",
+      "Scyther"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 3,
+    "leader": "Whitney",
+    "city": "Goldenrod City",
+    "type": "Normal",
+    "badge": "Plain Badge",
+    "team": [
+      "Clefairy",
+      "Miltank"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 4,
+    "leader": "Morty",
+    "city": "Ecruteak City",
+    "type": "Ghost",
+    "badge": "Fog Badge",
+    "team": [
+      "Gastly",
+      "Haunter",
+      "Gengar"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 5,
+    "leader": "Chuck",
+    "city": "Cianwood City",
+    "type": "Fighting",
+    "badge": "Storm Badge",
+    "team": [
+      "Primeape",
+      "Poliwrath",
+      "Kingler"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 6,
+    "leader": "Jasmine",
+    "city": "Olivine City",
+    "type": "Steel",
+    "badge": "Mineral Badge",
+    "team": [
+      "Magnemite",
+      "Magnemite",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 7,
+    "leader": "Pryce",
+    "city": "Mahogany Town",
+    "type": "Ice",
+    "badge": "Glacier Badge",
+    "team": [
+      "Seel",
+      "Dewgong",
+      "Piloswine"
+    ]
+  },
+  {
+    "game": "silver",
+    "gym_number": 8,
+    "leader": "Clair",
+    "city": "Blackthorn City",
+    "type": "Dragon",
+    "badge": "Rising Badge",
+    "team": [
+      "Dragonair",
+      "Dragonair",
+      "Dragonair",
+      "Kingdra"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 1,
+    "leader": "Falkner",
+    "city": "Violet City",
+    "type": "Flying",
+    "badge": "Zephyr Badge",
+    "team": [
+      "Pidgey",
+      "Pidgeotto"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 2,
+    "leader": "Bugsy",
+    "city": "Azalea Town",
+    "type": "Bug",
+    "badge": "Hive Badge",
+    "team": [
+      "Metapod",
+      "Kakuna",
+      "Scyther"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 3,
+    "leader": "Whitney",
+    "city": "Goldenrod City",
+    "type": "Normal",
+    "badge": "Plain Badge",
+    "team": [
+      "Clefairy",
+      "Miltank"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 4,
+    "leader": "Morty",
+    "city": "Ecruteak City",
+    "type": "Ghost",
+    "badge": "Fog Badge",
+    "team": [
+      "Gastly",
+      "Haunter",
+      "Gengar"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 5,
+    "leader": "Chuck",
+    "city": "Cianwood City",
+    "type": "Fighting",
+    "badge": "Storm Badge",
+    "team": [
+      "Primeape",
+      "Poliwrath",
+      "Kingler"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 6,
+    "leader": "Jasmine",
+    "city": "Olivine City",
+    "type": "Steel",
+    "badge": "Mineral Badge",
+    "team": [
+      "Magnemite",
+      "Magnemite",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 7,
+    "leader": "Pryce",
+    "city": "Mahogany Town",
+    "type": "Ice",
+    "badge": "Glacier Badge",
+    "team": [
+      "Seel",
+      "Dewgong",
+      "Piloswine"
+    ]
+  },
+  {
+    "game": "crystal",
+    "gym_number": 8,
+    "leader": "Clair",
+    "city": "Blackthorn City",
+    "type": "Dragon",
+    "badge": "Rising Badge",
+    "team": [
+      "Dragonair",
+      "Dragonair",
+      "Dragonair",
+      "Kingdra"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 1,
+    "leader": "Falkner",
+    "city": "Violet City",
+    "type": "Flying",
+    "badge": "Zephyr Badge",
+    "team": [
+      "Pidgey",
+      "Pidgeotto"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 2,
+    "leader": "Bugsy",
+    "city": "Azalea Town",
+    "type": "Bug",
+    "badge": "Hive Badge",
+    "team": [
+      "Metapod",
+      "Kakuna",
+      "Scyther"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 3,
+    "leader": "Whitney",
+    "city": "Goldenrod City",
+    "type": "Normal",
+    "badge": "Plain Badge",
+    "team": [
+      "Clefairy",
+      "Miltank"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 4,
+    "leader": "Morty",
+    "city": "Ecruteak City",
+    "type": "Ghost",
+    "badge": "Fog Badge",
+    "team": [
+      "Gastly",
+      "Haunter",
+      "Gengar"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 5,
+    "leader": "Chuck",
+    "city": "Cianwood City",
+    "type": "Fighting",
+    "badge": "Storm Badge",
+    "team": [
+      "Primeape",
+      "Poliwrath",
+      "Kingler"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 6,
+    "leader": "Jasmine",
+    "city": "Olivine City",
+    "type": "Steel",
+    "badge": "Mineral Badge",
+    "team": [
+      "Magnemite",
+      "Magnemite",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 7,
+    "leader": "Pryce",
+    "city": "Mahogany Town",
+    "type": "Ice",
+    "badge": "Glacier Badge",
+    "team": [
+      "Seel",
+      "Dewgong",
+      "Piloswine"
+    ]
+  },
+  {
+    "game": "heart gold",
+    "gym_number": 8,
+    "leader": "Clair",
+    "city": "Blackthorn City",
+    "type": "Dragon",
+    "badge": "Rising Badge",
+    "team": [
+      "Dragonair",
+      "Dragonair",
+      "Dragonair",
+      "Kingdra"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 1,
+    "leader": "Falkner",
+    "city": "Violet City",
+    "type": "Flying",
+    "badge": "Zephyr Badge",
+    "team": [
+      "Pidgey",
+      "Pidgeotto"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 2,
+    "leader": "Bugsy",
+    "city": "Azalea Town",
+    "type": "Bug",
+    "badge": "Hive Badge",
+    "team": [
+      "Metapod",
+      "Kakuna",
+      "Scyther"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 3,
+    "leader": "Whitney",
+    "city": "Goldenrod City",
+    "type": "Normal",
+    "badge": "Plain Badge",
+    "team": [
+      "Clefairy",
+      "Miltank"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 4,
+    "leader": "Morty",
+    "city": "Ecruteak City",
+    "type": "Ghost",
+    "badge": "Fog Badge",
+    "team": [
+      "Gastly",
+      "Haunter",
+      "Gengar"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 5,
+    "leader": "Chuck",
+    "city": "Cianwood City",
+    "type": "Fighting",
+    "badge": "Storm Badge",
+    "team": [
+      "Primeape",
+      "Poliwrath",
+      "Kingler"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 6,
+    "leader": "Jasmine",
+    "city": "Olivine City",
+    "type": "Steel",
+    "badge": "Mineral Badge",
+    "team": [
+      "Magnemite",
+      "Magnemite",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 7,
+    "leader": "Pryce",
+    "city": "Mahogany Town",
+    "type": "Ice",
+    "badge": "Glacier Badge",
+    "team": [
+      "Seel",
+      "Dewgong",
+      "Piloswine"
+    ]
+  },
+  {
+    "game": "soul silver",
+    "gym_number": 8,
+    "leader": "Clair",
+    "city": "Blackthorn City",
+    "type": "Dragon",
+    "badge": "Rising Badge",
+    "team": [
+      "Dragonair",
+      "Dragonair",
+      "Dragonair",
+      "Kingdra"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 1,
+    "leader": "Roxanne",
+    "city": "Rustboro City",
+    "type": "Rock",
+    "badge": "Stone Badge",
+    "team": [
+      "Geodude",
+      "Nosepass",
+      "Aron"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 2,
+    "leader": "Brawly",
+    "city": "Dewford Town",
+    "type": "Fighting",
+    "badge": "Knuckle Badge",
+    "team": [
+      "Machop",
+      "Makuhita",
+      "Meditite"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 3,
+    "leader": "Wattson",
+    "city": "Mauville City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Electrike",
+      "Magnemite",
+      "Magneton"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 4,
+    "leader": "Flannery",
+    "city": "Lavaridge Town",
+    "type": "Fire",
+    "badge": "Heat Badge",
+    "team": [
+      "Slugma",
+      "Numel",
+      "Camerupt"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 5,
+    "leader": "Norman",
+    "city": "Petalburg City",
+    "type": "Normal",
+    "badge": "Balance Badge",
+    "team": [
+      "Slakoth",
+      "Vigoroth",
+      "Slaking"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 6,
+    "leader": "Winona",
+    "city": "Fortree City",
+    "type": "Flying",
+    "badge": "Feather Badge",
+    "team": [
+      "Taillow",
+      "Swellow",
+      "Skarmory",
+      "Pelipper",
+      "Altaria"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 7,
+    "leader": "Tate & Liza",
+    "city": "Mossdeep City",
+    "type": "Psychic",
+    "badge": "Mind Badge",
+    "team": [
+      "Lunatone",
+      "Solrock",
+      "Xatu",
+      "Metagross"
+    ]
+  },
+  {
+    "game": "ruby",
+    "gym_number": 8,
+    "leader": "Wallace",
+    "city": "Sootopolis City",
+    "type": "Water",
+    "badge": "Rain Badge",
+    "team": [
+      "Wailord",
+      "Tentacruel",
+      "Luvdisc",
+      "Whiscash",
+      "Milotic"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 1,
+    "leader": "Roxanne",
+    "city": "Rustboro City",
+    "type": "Rock",
+    "badge": "Stone Badge",
+    "team": [
+      "Geodude",
+      "Nosepass",
+      "Aron"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 2,
+    "leader": "Brawly",
+    "city": "Dewford Town",
+    "type": "Fighting",
+    "badge": "Knuckle Badge",
+    "team": [
+      "Machop",
+      "Makuhita",
+      "Meditite"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 3,
+    "leader": "Wattson",
+    "city": "Mauville City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Electrike",
+      "Magnemite",
+      "Magneton"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 4,
+    "leader": "Flannery",
+    "city": "Lavaridge Town",
+    "type": "Fire",
+    "badge": "Heat Badge",
+    "team": [
+      "Slugma",
+      "Numel",
+      "Camerupt"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 5,
+    "leader": "Norman",
+    "city": "Petalburg City",
+    "type": "Normal",
+    "badge": "Balance Badge",
+    "team": [
+      "Slakoth",
+      "Vigoroth",
+      "Slaking"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 6,
+    "leader": "Winona",
+    "city": "Fortree City",
+    "type": "Flying",
+    "badge": "Feather Badge",
+    "team": [
+      "Taillow",
+      "Swellow",
+      "Skarmory",
+      "Pelipper",
+      "Altaria"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 7,
+    "leader": "Tate & Liza",
+    "city": "Mossdeep City",
+    "type": "Psychic",
+    "badge": "Mind Badge",
+    "team": [
+      "Lunatone",
+      "Solrock",
+      "Xatu",
+      "Metagross"
+    ]
+  },
+  {
+    "game": "sapphire",
+    "gym_number": 8,
+    "leader": "Wallace",
+    "city": "Sootopolis City",
+    "type": "Water",
+    "badge": "Rain Badge",
+    "team": [
+      "Wailord",
+      "Tentacruel",
+      "Luvdisc",
+      "Whiscash",
+      "Milotic"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 1,
+    "leader": "Roxanne",
+    "city": "Rustboro City",
+    "type": "Rock",
+    "badge": "Stone Badge",
+    "team": [
+      "Geodude",
+      "Nosepass",
+      "Aron"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 2,
+    "leader": "Brawly",
+    "city": "Dewford Town",
+    "type": "Fighting",
+    "badge": "Knuckle Badge",
+    "team": [
+      "Machop",
+      "Makuhita",
+      "Meditite"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 3,
+    "leader": "Wattson",
+    "city": "Mauville City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Electrike",
+      "Magnemite",
+      "Magneton"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 4,
+    "leader": "Flannery",
+    "city": "Lavaridge Town",
+    "type": "Fire",
+    "badge": "Heat Badge",
+    "team": [
+      "Slugma",
+      "Numel",
+      "Camerupt"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 5,
+    "leader": "Norman",
+    "city": "Petalburg City",
+    "type": "Normal",
+    "badge": "Balance Badge",
+    "team": [
+      "Slakoth",
+      "Vigoroth",
+      "Slaking"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 6,
+    "leader": "Winona",
+    "city": "Fortree City",
+    "type": "Flying",
+    "badge": "Feather Badge",
+    "team": [
+      "Taillow",
+      "Swellow",
+      "Skarmory",
+      "Pelipper",
+      "Altaria"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 7,
+    "leader": "Tate & Liza",
+    "city": "Mossdeep City",
+    "type": "Psychic",
+    "badge": "Mind Badge",
+    "team": [
+      "Lunatone",
+      "Solrock",
+      "Xatu",
+      "Metagross"
+    ]
+  },
+  {
+    "game": "emerald",
+    "gym_number": 8,
+    "leader": "Wallace",
+    "city": "Sootopolis City",
+    "type": "Water",
+    "badge": "Rain Badge",
+    "team": [
+      "Wailord",
+      "Tentacruel",
+      "Luvdisc",
+      "Whiscash",
+      "Milotic"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 1,
+    "leader": "Roxanne",
+    "city": "Rustboro City",
+    "type": "Rock",
+    "badge": "Stone Badge",
+    "team": [
+      "Geodude",
+      "Nosepass",
+      "Aron"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 2,
+    "leader": "Brawly",
+    "city": "Dewford Town",
+    "type": "Fighting",
+    "badge": "Knuckle Badge",
+    "team": [
+      "Machop",
+      "Makuhita",
+      "Meditite"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 3,
+    "leader": "Wattson",
+    "city": "Mauville City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Electrike",
+      "Magnemite",
+      "Magneton"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 4,
+    "leader": "Flannery",
+    "city": "Lavaridge Town",
+    "type": "Fire",
+    "badge": "Heat Badge",
+    "team": [
+      "Slugma",
+      "Numel",
+      "Camerupt"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 5,
+    "leader": "Norman",
+    "city": "Petalburg City",
+    "type": "Normal",
+    "badge": "Balance Badge",
+    "team": [
+      "Slakoth",
+      "Vigoroth",
+      "Slaking"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 6,
+    "leader": "Winona",
+    "city": "Fortree City",
+    "type": "Flying",
+    "badge": "Feather Badge",
+    "team": [
+      "Taillow",
+      "Swellow",
+      "Skarmory",
+      "Pelipper",
+      "Altaria"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 7,
+    "leader": "Tate & Liza",
+    "city": "Mossdeep City",
+    "type": "Psychic",
+    "badge": "Mind Badge",
+    "team": [
+      "Lunatone",
+      "Solrock",
+      "Xatu",
+      "Metagross"
+    ]
+  },
+  {
+    "game": "omega ruby",
+    "gym_number": 8,
+    "leader": "Wallace",
+    "city": "Sootopolis City",
+    "type": "Water",
+    "badge": "Rain Badge",
+    "team": [
+      "Wailord",
+      "Tentacruel",
+      "Luvdisc",
+      "Whiscash",
+      "Milotic"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 1,
+    "leader": "Roxanne",
+    "city": "Rustboro City",
+    "type": "Rock",
+    "badge": "Stone Badge",
+    "team": [
+      "Geodude",
+      "Nosepass",
+      "Aron"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 2,
+    "leader": "Brawly",
+    "city": "Dewford Town",
+    "type": "Fighting",
+    "badge": "Knuckle Badge",
+    "team": [
+      "Machop",
+      "Makuhita",
+      "Meditite"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 3,
+    "leader": "Wattson",
+    "city": "Mauville City",
+    "type": "Electric",
+    "badge": "Thunder Badge",
+    "team": [
+      "Voltorb",
+      "Electrike",
+      "Magnemite",
+      "Magneton"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 4,
+    "leader": "Flannery",
+    "city": "Lavaridge Town",
+    "type": "Fire",
+    "badge": "Heat Badge",
+    "team": [
+      "Slugma",
+      "Numel",
+      "Camerupt"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 5,
+    "leader": "Norman",
+    "city": "Petalburg City",
+    "type": "Normal",
+    "badge": "Balance Badge",
+    "team": [
+      "Slakoth",
+      "Vigoroth",
+      "Slaking"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 6,
+    "leader": "Winona",
+    "city": "Fortree City",
+    "type": "Flying",
+    "badge": "Feather Badge",
+    "team": [
+      "Taillow",
+      "Swellow",
+      "Skarmory",
+      "Pelipper",
+      "Altaria"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 7,
+    "leader": "Tate & Liza",
+    "city": "Mossdeep City",
+    "type": "Psychic",
+    "badge": "Mind Badge",
+    "team": [
+      "Lunatone",
+      "Solrock",
+      "Xatu",
+      "Metagross"
+    ]
+  },
+  {
+    "game": "alpha sapphire",
+    "gym_number": 8,
+    "leader": "Wallace",
+    "city": "Sootopolis City",
+    "type": "Water",
+    "badge": "Rain Badge",
+    "team": [
+      "Wailord",
+      "Tentacruel",
+      "Luvdisc",
+      "Whiscash",
+      "Milotic"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 1,
+    "leader": "Roark",
+    "city": "Oreburgh City",
+    "type": "Rock",
+    "badge": "Coal Badge",
+    "team": [
+      "Geodude",
+      "Onix",
+      "Cranidos"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 2,
+    "leader": "Gardenia",
+    "city": "Eterna City",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "team": [
+      "Cherubi",
+      "Roselia",
+      "Budew"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 3,
+    "leader": "Maylene",
+    "city": "Veilstone City",
+    "type": "Fighting",
+    "badge": "Cobble Badge",
+    "team": [
+      "Meditite",
+      "Machoke",
+      "Lucario"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 4,
+    "leader": "Crasher Wake",
+    "city": "Pastoria City",
+    "type": "Water",
+    "badge": "Fen Badge",
+    "team": [
+      "Gyarados",
+      "Quagsire",
+      "Floatzel"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 5,
+    "leader": "Fantina",
+    "city": "Hearthome City",
+    "type": "Ghost",
+    "badge": "Relic Badge",
+    "team": [
+      "Haunter",
+      "Mismagius",
+      "Dusknoir",
+      "Drapion"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 6,
+    "leader": "Byron",
+    "city": "Canalave City",
+    "type": "Steel",
+    "badge": "Mine Badge",
+    "team": [
+      "Bronzor",
+      "Bronzong",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 7,
+    "leader": "Candice",
+    "city": "Snowpoint City",
+    "type": "Ice",
+    "badge": "Icicle Badge",
+    "team": [
+      "Snover",
+      "Sneasel",
+      "Abomasnow",
+      "Froslass"
+    ]
+  },
+  {
+    "game": "diamond",
+    "gym_number": 8,
+    "leader": "Volkner",
+    "city": "Sunyshore City",
+    "type": "Electric",
+    "badge": "Beacon Badge",
+    "team": [
+      "Pachirisu",
+      "Ambipom",
+      "Lanturn",
+      "Electivire",
+      "Luxray"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 1,
+    "leader": "Roark",
+    "city": "Oreburgh City",
+    "type": "Rock",
+    "badge": "Coal Badge",
+    "team": [
+      "Geodude",
+      "Onix",
+      "Cranidos"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 2,
+    "leader": "Gardenia",
+    "city": "Eterna City",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "team": [
+      "Cherubi",
+      "Roselia",
+      "Budew"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 3,
+    "leader": "Maylene",
+    "city": "Veilstone City",
+    "type": "Fighting",
+    "badge": "Cobble Badge",
+    "team": [
+      "Meditite",
+      "Machoke",
+      "Lucario"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 4,
+    "leader": "Crasher Wake",
+    "city": "Pastoria City",
+    "type": "Water",
+    "badge": "Fen Badge",
+    "team": [
+      "Gyarados",
+      "Quagsire",
+      "Floatzel"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 5,
+    "leader": "Fantina",
+    "city": "Hearthome City",
+    "type": "Ghost",
+    "badge": "Relic Badge",
+    "team": [
+      "Haunter",
+      "Mismagius",
+      "Dusknoir",
+      "Drapion"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 6,
+    "leader": "Byron",
+    "city": "Canalave City",
+    "type": "Steel",
+    "badge": "Mine Badge",
+    "team": [
+      "Bronzor",
+      "Bronzong",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 7,
+    "leader": "Candice",
+    "city": "Snowpoint City",
+    "type": "Ice",
+    "badge": "Icicle Badge",
+    "team": [
+      "Snover",
+      "Sneasel",
+      "Abomasnow",
+      "Froslass"
+    ]
+  },
+  {
+    "game": "pearl",
+    "gym_number": 8,
+    "leader": "Volkner",
+    "city": "Sunyshore City",
+    "type": "Electric",
+    "badge": "Beacon Badge",
+    "team": [
+      "Pachirisu",
+      "Ambipom",
+      "Lanturn",
+      "Electivire",
+      "Luxray"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 1,
+    "leader": "Roark",
+    "city": "Oreburgh City",
+    "type": "Rock",
+    "badge": "Coal Badge",
+    "team": [
+      "Geodude",
+      "Onix",
+      "Cranidos"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 2,
+    "leader": "Gardenia",
+    "city": "Eterna City",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "team": [
+      "Cherubi",
+      "Roselia",
+      "Budew"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 3,
+    "leader": "Maylene",
+    "city": "Veilstone City",
+    "type": "Fighting",
+    "badge": "Cobble Badge",
+    "team": [
+      "Meditite",
+      "Machoke",
+      "Lucario"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 4,
+    "leader": "Crasher Wake",
+    "city": "Pastoria City",
+    "type": "Water",
+    "badge": "Fen Badge",
+    "team": [
+      "Gyarados",
+      "Quagsire",
+      "Floatzel"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 5,
+    "leader": "Fantina",
+    "city": "Hearthome City",
+    "type": "Ghost",
+    "badge": "Relic Badge",
+    "team": [
+      "Haunter",
+      "Mismagius",
+      "Dusknoir",
+      "Drapion"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 6,
+    "leader": "Byron",
+    "city": "Canalave City",
+    "type": "Steel",
+    "badge": "Mine Badge",
+    "team": [
+      "Bronzor",
+      "Bronzong",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 7,
+    "leader": "Candice",
+    "city": "Snowpoint City",
+    "type": "Ice",
+    "badge": "Icicle Badge",
+    "team": [
+      "Snover",
+      "Sneasel",
+      "Abomasnow",
+      "Froslass"
+    ]
+  },
+  {
+    "game": "platinum",
+    "gym_number": 8,
+    "leader": "Volkner",
+    "city": "Sunyshore City",
+    "type": "Electric",
+    "badge": "Beacon Badge",
+    "team": [
+      "Pachirisu",
+      "Ambipom",
+      "Lanturn",
+      "Electivire",
+      "Luxray"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 1,
+    "leader": "Roark",
+    "city": "Oreburgh City",
+    "type": "Rock",
+    "badge": "Coal Badge",
+    "team": [
+      "Geodude",
+      "Onix",
+      "Cranidos"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 2,
+    "leader": "Gardenia",
+    "city": "Eterna City",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "team": [
+      "Cherubi",
+      "Roselia",
+      "Budew"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 3,
+    "leader": "Maylene",
+    "city": "Veilstone City",
+    "type": "Fighting",
+    "badge": "Cobble Badge",
+    "team": [
+      "Meditite",
+      "Machoke",
+      "Lucario"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 4,
+    "leader": "Crasher Wake",
+    "city": "Pastoria City",
+    "type": "Water",
+    "badge": "Fen Badge",
+    "team": [
+      "Gyarados",
+      "Quagsire",
+      "Floatzel"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 5,
+    "leader": "Fantina",
+    "city": "Hearthome City",
+    "type": "Ghost",
+    "badge": "Relic Badge",
+    "team": [
+      "Haunter",
+      "Mismagius",
+      "Dusknoir",
+      "Drapion"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 6,
+    "leader": "Byron",
+    "city": "Canalave City",
+    "type": "Steel",
+    "badge": "Mine Badge",
+    "team": [
+      "Bronzor",
+      "Bronzong",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 7,
+    "leader": "Candice",
+    "city": "Snowpoint City",
+    "type": "Ice",
+    "badge": "Icicle Badge",
+    "team": [
+      "Snover",
+      "Sneasel",
+      "Abomasnow",
+      "Froslass"
+    ]
+  },
+  {
+    "game": "brilliant diamond",
+    "gym_number": 8,
+    "leader": "Volkner",
+    "city": "Sunyshore City",
+    "type": "Electric",
+    "badge": "Beacon Badge",
+    "team": [
+      "Pachirisu",
+      "Ambipom",
+      "Lanturn",
+      "Electivire",
+      "Luxray"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 1,
+    "leader": "Roark",
+    "city": "Oreburgh City",
+    "type": "Rock",
+    "badge": "Coal Badge",
+    "team": [
+      "Geodude",
+      "Onix",
+      "Cranidos"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 2,
+    "leader": "Gardenia",
+    "city": "Eterna City",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "team": [
+      "Cherubi",
+      "Roselia",
+      "Budew"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 3,
+    "leader": "Maylene",
+    "city": "Veilstone City",
+    "type": "Fighting",
+    "badge": "Cobble Badge",
+    "team": [
+      "Meditite",
+      "Machoke",
+      "Lucario"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 4,
+    "leader": "Crasher Wake",
+    "city": "Pastoria City",
+    "type": "Water",
+    "badge": "Fen Badge",
+    "team": [
+      "Gyarados",
+      "Quagsire",
+      "Floatzel"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 5,
+    "leader": "Fantina",
+    "city": "Hearthome City",
+    "type": "Ghost",
+    "badge": "Relic Badge",
+    "team": [
+      "Haunter",
+      "Mismagius",
+      "Dusknoir",
+      "Drapion"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 6,
+    "leader": "Byron",
+    "city": "Canalave City",
+    "type": "Steel",
+    "badge": "Mine Badge",
+    "team": [
+      "Bronzor",
+      "Bronzong",
+      "Steelix"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 7,
+    "leader": "Candice",
+    "city": "Snowpoint City",
+    "type": "Ice",
+    "badge": "Icicle Badge",
+    "team": [
+      "Snover",
+      "Sneasel",
+      "Abomasnow",
+      "Froslass"
+    ]
+  },
+  {
+    "game": "shining pearl",
+    "gym_number": 8,
+    "leader": "Volkner",
+    "city": "Sunyshore City",
+    "type": "Electric",
+    "badge": "Beacon Badge",
+    "team": [
+      "Pachirisu",
+      "Ambipom",
+      "Lanturn",
+      "Electivire",
+      "Luxray"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 1,
+    "leader": "Cilan",
+    "city": "Striaton City",
+    "type": "Grass",
+    "badge": "Basic Badge",
+    "team": [
+      "Pansage",
+      "Pansage"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 2,
+    "leader": "Lenora",
+    "city": "Nacrene City",
+    "type": "Normal",
+    "badge": "Quake Badge",
+    "team": [
+      "Lillipup",
+      "Herdier",
+      "Stoutland"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 3,
+    "leader": "Burgh",
+    "city": "Castelia City",
+    "type": "Bug",
+    "badge": "Insect Badge",
+    "team": [
+      "Dwebble",
+      "Whirlipede",
+      "Leavanny"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 4,
+    "leader": "Elesa",
+    "city": "Nimbasa City",
+    "type": "Electric",
+    "badge": "Bolt Badge",
+    "team": [
+      "Emolga",
+      "Zebstrika",
+      "Joltik",
+      "Stunfisk"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 5,
+    "leader": "Clay",
+    "city": "Driftveil City",
+    "type": "Ground",
+    "badge": "Quake Badge",
+    "team": [
+      "Krokorok",
+      "Excadrill",
+      "Palpitoad"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 6,
+    "leader": "Skyla",
+    "city": "Mistralton City",
+    "type": "Flying",
+    "badge": "Jet Badge",
+    "team": [
+      "Swanna",
+      "Unfezant",
+      "Swoobat"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 7,
+    "leader": "Brycen",
+    "city": "Icirrus City",
+    "type": "Ice",
+    "badge": "Freeze Badge",
+    "team": [
+      "Cryogonal",
+      "Beartic",
+      "Vanilluxe"
+    ]
+  },
+  {
+    "game": "black",
+    "gym_number": 8,
+    "leader": "Iris",
+    "city": "Humilau City",
+    "type": "Dragon",
+    "badge": "Legend Badge",
+    "team": [
+      "Haxorus",
+      "Druddigon",
+      "Fraxure",
+      "Hydreigon"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 1,
+    "leader": "Cilan",
+    "city": "Striaton City",
+    "type": "Grass",
+    "badge": "Basic Badge",
+    "team": [
+      "Pansage",
+      "Pansage"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 2,
+    "leader": "Lenora",
+    "city": "Nacrene City",
+    "type": "Normal",
+    "badge": "Quake Badge",
+    "team": [
+      "Lillipup",
+      "Herdier",
+      "Stoutland"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 3,
+    "leader": "Burgh",
+    "city": "Castelia City",
+    "type": "Bug",
+    "badge": "Insect Badge",
+    "team": [
+      "Dwebble",
+      "Whirlipede",
+      "Leavanny"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 4,
+    "leader": "Elesa",
+    "city": "Nimbasa City",
+    "type": "Electric",
+    "badge": "Bolt Badge",
+    "team": [
+      "Emolga",
+      "Zebstrika",
+      "Joltik",
+      "Stunfisk"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 5,
+    "leader": "Clay",
+    "city": "Driftveil City",
+    "type": "Ground",
+    "badge": "Quake Badge",
+    "team": [
+      "Krokorok",
+      "Excadrill",
+      "Palpitoad"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 6,
+    "leader": "Skyla",
+    "city": "Mistralton City",
+    "type": "Flying",
+    "badge": "Jet Badge",
+    "team": [
+      "Swanna",
+      "Unfezant",
+      "Swoobat"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 7,
+    "leader": "Brycen",
+    "city": "Icirrus City",
+    "type": "Ice",
+    "badge": "Freeze Badge",
+    "team": [
+      "Cryogonal",
+      "Beartic",
+      "Vanilluxe"
+    ]
+  },
+  {
+    "game": "white",
+    "gym_number": 8,
+    "leader": "Iris",
+    "city": "Humilau City",
+    "type": "Dragon",
+    "badge": "Legend Badge",
+    "team": [
+      "Haxorus",
+      "Druddigon",
+      "Fraxure",
+      "Hydreigon"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 1,
+    "leader": "Cheren",
+    "city": "Striaton City",
+    "type": "Normal",
+    "badge": "Basic Badge",
+    "team": [
+      "Pidove",
+      "Lillipup",
+      "Audino"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 2,
+    "leader": "Roxie",
+    "city": "Nimbasa City",
+    "type": "Poison",
+    "badge": "Poison Badge",
+    "team": [
+      "Nidoran",
+      "Koffing",
+      "Whirlipede",
+      "Scolipede"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 3,
+    "leader": "Burgh",
+    "city": "Castelia City",
+    "type": "Bug",
+    "badge": "Insect Badge",
+    "team": [
+      "Dwebble",
+      "Whirlipede",
+      "Leavanny"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 4,
+    "leader": "Elesa",
+    "city": "Nimbasa City",
+    "type": "Electric",
+    "badge": "Bolt Badge",
+    "team": [
+      "Emolga",
+      "Zebstrika",
+      "Joltik",
+      "Stunfisk"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 5,
+    "leader": "Clay",
+    "city": "Driftveil City",
+    "type": "Ground",
+    "badge": "Quake Badge",
+    "team": [
+      "Krokorok",
+      "Excadrill",
+      "Palpitoad"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 6,
+    "leader": "Skyla",
+    "city": "Mistralton City",
+    "type": "Flying",
+    "badge": "Jet Badge",
+    "team": [
+      "Swanna",
+      "Unfezant",
+      "Swoobat"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 7,
+    "leader": "Brycen",
+    "city": "Icirrus City",
+    "type": "Ice",
+    "badge": "Freeze Badge",
+    "team": [
+      "Cryogonal",
+      "Beartic",
+      "Vanilluxe"
+    ]
+  },
+  {
+    "game": "black 2",
+    "gym_number": 8,
+    "leader": "Drayden",
+    "city": "Opelucid City",
+    "type": "Dragon",
+    "badge": "Legend Badge",
+    "team": [
+      "Haxorus",
+      "Altaria",
+      "Druddigon",
+      "Hydreigon"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 1,
+    "leader": "Cheren",
+    "city": "Striaton City",
+    "type": "Normal",
+    "badge": "Basic Badge",
+    "team": [
+      "Pidove",
+      "Lillipup",
+      "Audino"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 2,
+    "leader": "Roxie",
+    "city": "Nimbasa City",
+    "type": "Poison",
+    "badge": "Poison Badge",
+    "team": [
+      "Nidoran",
+      "Koffing",
+      "Whirlipede",
+      "Scolipede"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 3,
+    "leader": "Burgh",
+    "city": "Castelia City",
+    "type": "Bug",
+    "badge": "Insect Badge",
+    "team": [
+      "Dwebble",
+      "Whirlipede",
+      "Leavanny"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 4,
+    "leader": "Elesa",
+    "city": "Nimbasa City",
+    "type": "Electric",
+    "badge": "Bolt Badge",
+    "team": [
+      "Emolga",
+      "Zebstrika",
+      "Joltik",
+      "Stunfisk"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 5,
+    "leader": "Clay",
+    "city": "Driftveil City",
+    "type": "Ground",
+    "badge": "Quake Badge",
+    "team": [
+      "Krokorok",
+      "Excadrill",
+      "Palpitoad"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 6,
+    "leader": "Skyla",
+    "city": "Mistralton City",
+    "type": "Flying",
+    "badge": "Jet Badge",
+    "team": [
+      "Swanna",
+      "Unfezant",
+      "Swoobat"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 7,
+    "leader": "Brycen",
+    "city": "Icirrus City",
+    "type": "Ice",
+    "badge": "Freeze Badge",
+    "team": [
+      "Cryogonal",
+      "Beartic",
+      "Vanilluxe"
+    ]
+  },
+  {
+    "game": "white 2",
+    "gym_number": 8,
+    "leader": "Drayden",
+    "city": "Opelucid City",
+    "type": "Dragon",
+    "badge": "Legend Badge",
+    "team": [
+      "Haxorus",
+      "Altaria",
+      "Druddigon",
+      "Hydreigon"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 1,
+    "leader": "Viola",
+    "city": "Santalune City",
+    "type": "Bug",
+    "badge": "Bug Badge",
+    "team": [
+      "Fletchling",
+      "Fletchinder",
+      "Bunnelby"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 2,
+    "leader": "Grant",
+    "city": "Cyllage City",
+    "type": "Rock",
+    "badge": "Cliff Badge",
+    "team": [
+      "Amaura",
+      "Geodude",
+      "Barbaracle"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 3,
+    "leader": "Korrina",
+    "city": "Shalour City",
+    "type": "Fighting",
+    "badge": "Rumble Badge",
+    "team": [
+      "Pancham",
+      "Lucario"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 4,
+    "leader": "Ramos",
+    "city": "Coumarine City",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "team": [
+      "Gogoat",
+      "Sliggoo",
+      "Leavanny",
+      "Trevenant"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 5,
+    "leader": "Clemont",
+    "city": "Lumiose City",
+    "type": "Electric",
+    "badge": "Voltage Badge",
+    "team": [
+      "Bunnelby",
+      "Dedenne",
+      "Chespin",
+      "Heliolisk"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 6,
+    "leader": "Valerie",
+    "city": "Laverre City",
+    "type": "Fairy",
+    "badge": "Fairy Badge",
+    "team": [
+      "Sylveon",
+      "Aromatisse",
+      "Gourgeist",
+      "Florges"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 7,
+    "leader": "Olympia",
+    "city": "Anistar City",
+    "type": "Psychic",
+    "badge": "Psychic Badge",
+    "team": [
+      "Xatu",
+      "Gardevoir",
+      "Medicham",
+      "Slowbro",
+      "Malamar"
+    ]
+  },
+  {
+    "game": "x",
+    "gym_number": 8,
+    "leader": "Wulfric",
+    "city": "Snowbelle City",
+    "type": "Ice",
+    "badge": "Iceberg Badge",
+    "team": [
+      "Abomasnow",
+      "Avalugg",
+      "Cryogonal",
+      "Mamoswine"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 1,
+    "leader": "Viola",
+    "city": "Santalune City",
+    "type": "Bug",
+    "badge": "Bug Badge",
+    "team": [
+      "Fletchling",
+      "Fletchinder",
+      "Bunnelby"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 2,
+    "leader": "Grant",
+    "city": "Cyllage City",
+    "type": "Rock",
+    "badge": "Cliff Badge",
+    "team": [
+      "Amaura",
+      "Geodude",
+      "Barbaracle"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 3,
+    "leader": "Korrina",
+    "city": "Shalour City",
+    "type": "Fighting",
+    "badge": "Rumble Badge",
+    "team": [
+      "Pancham",
+      "Lucario"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 4,
+    "leader": "Ramos",
+    "city": "Coumarine City",
+    "type": "Grass",
+    "badge": "Forest Badge",
+    "team": [
+      "Gogoat",
+      "Sliggoo",
+      "Leavanny",
+      "Trevenant"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 5,
+    "leader": "Clemont",
+    "city": "Lumiose City",
+    "type": "Electric",
+    "badge": "Voltage Badge",
+    "team": [
+      "Bunnelby",
+      "Dedenne",
+      "Chespin",
+      "Heliolisk"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 6,
+    "leader": "Valerie",
+    "city": "Laverre City",
+    "type": "Fairy",
+    "badge": "Fairy Badge",
+    "team": [
+      "Sylveon",
+      "Aromatisse",
+      "Gourgeist",
+      "Florges"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 7,
+    "leader": "Olympia",
+    "city": "Anistar City",
+    "type": "Psychic",
+    "badge": "Psychic Badge",
+    "team": [
+      "Xatu",
+      "Gardevoir",
+      "Medicham",
+      "Slowbro",
+      "Malamar"
+    ]
+  },
+  {
+    "game": "y",
+    "gym_number": 8,
+    "leader": "Wulfric",
+    "city": "Snowbelle City",
+    "type": "Ice",
+    "badge": "Iceberg Badge",
+    "team": [
+      "Abomasnow",
+      "Avalugg",
+      "Cryogonal",
+      "Mamoswine"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 1,
+    "leader": "Milo",
+    "city": "Turffield",
+    "type": "Grass",
+    "badge": "Grass Badge",
+    "team": [
+      "Gossifleur",
+      "Eldegoss",
+      "Steenee"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 2,
+    "leader": "Nessa",
+    "city": "Hulbury",
+    "type": "Water",
+    "badge": "Water Badge",
+    "team": [
+      "Chewtle",
+      "Arrokuda",
+      "Drednaw"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 3,
+    "leader": "Kabu",
+    "city": "Motostoke",
+    "type": "Fire",
+    "badge": "Fire Badge",
+    "team": [
+      "Centiskorch",
+      "Arcanine",
+      "Carkol"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 4,
+    "leader": "Bea",
+    "city": "Stow-on-Side",
+    "type": "Fighting",
+    "badge": "Fighting Badge",
+    "team": [
+      "Hitmontop",
+      "Kommo-o",
+      "Sirfetchd"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 5,
+    "leader": "Opal",
+    "city": "Ballonlea",
+    "type": "Fairy",
+    "badge": "Fairy Badge",
+    "team": [
+      "Mr. Rime",
+      "Togekiss",
+      "Alcremie"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 6,
+    "leader": "Gordie",
+    "city": "Circhester",
+    "type": "Rock",
+    "badge": "Rock Badge",
+    "team": [
+      "Drednaw",
+      "Fossil Pok\u00e9mon",
+      "Coalossal",
+      "Tyranitar"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 7,
+    "leader": "Piers",
+    "city": "Spikemuth",
+    "type": "Dark",
+    "badge": "Dark Badge",
+    "team": [
+      "Obstagoon",
+      "Scrafty",
+      "Tyranitar"
+    ]
+  },
+  {
+    "game": "sword",
+    "gym_number": 8,
+    "leader": "Raihan",
+    "city": "Hammerlocke",
+    "type": "Dragon",
+    "badge": "Dragon Badge",
+    "team": [
+      "Duraludon",
+      "Falinks",
+      "Seismitoad",
+      "Sandaconda"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 1,
+    "leader": "Milo",
+    "city": "Turffield",
+    "type": "Grass",
+    "badge": "Grass Badge",
+    "team": [
+      "Gossifleur",
+      "Eldegoss",
+      "Steenee"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 2,
+    "leader": "Nessa",
+    "city": "Hulbury",
+    "type": "Water",
+    "badge": "Water Badge",
+    "team": [
+      "Chewtle",
+      "Arrokuda",
+      "Drednaw"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 3,
+    "leader": "Kabu",
+    "city": "Motostoke",
+    "type": "Fire",
+    "badge": "Fire Badge",
+    "team": [
+      "Centiskorch",
+      "Arcanine",
+      "Carkol"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 4,
+    "leader": "Allister",
+    "city": "Stow-on-Side",
+    "type": "Ghost",
+    "badge": "Ghost Badge",
+    "team": [
+      "Gengar",
+      "Mimikyu",
+      "Gholdengo"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 5,
+    "leader": "Opal",
+    "city": "Ballonlea",
+    "type": "Fairy",
+    "badge": "Fairy Badge",
+    "team": [
+      "Mr. Rime",
+      "Togekiss",
+      "Alcremie"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 6,
+    "leader": "Melony",
+    "city": "Circhester",
+    "type": "Ice",
+    "badge": "Ice Badge",
+    "team": [
+      "Frosmoth",
+      "Snorunt",
+      "Darmanitan",
+      "Lapras"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 7,
+    "leader": "Piers",
+    "city": "Spikemuth",
+    "type": "Dark",
+    "badge": "Dark Badge",
+    "team": [
+      "Obstagoon",
+      "Scrafty",
+      "Tyranitar"
+    ]
+  },
+  {
+    "game": "shield",
+    "gym_number": 8,
+    "leader": "Raihan",
+    "city": "Hammerlocke",
+    "type": "Dragon",
+    "badge": "Dragon Badge",
+    "team": [
+      "Duraludon",
+      "Falinks",
+      "Seismitoad",
+      "Sandaconda"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 1,
+    "leader": "Katy",
+    "city": "Cortondo",
+    "type": "Normal",
+    "badge": "Normal Badge",
+    "team": [
+      "Lechonk",
+      "Pawmi",
+      "Smoliv"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 2,
+    "leader": "Brassius",
+    "city": "Artazon",
+    "type": "Grass",
+    "badge": "Grass Badge",
+    "team": [
+      "Smoliv",
+      "Bramblin",
+      "Meowscarada"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 3,
+    "leader": "Iono",
+    "city": "Levincia",
+    "type": "Electric",
+    "badge": "Electric Badge",
+    "team": [
+      "Pawmi",
+      "Electrike",
+      "Klawf",
+      "Tinkatink"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 4,
+    "leader": "Kofu",
+    "city": "Porto Marinada",
+    "type": "Water",
+    "badge": "Water Badge",
+    "team": [
+      "Quaxly",
+      "Palafin",
+      "Wugtrub",
+      "Clodsire"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 5,
+    "leader": "Ryme",
+    "city": "Meditown",
+    "type": "Psychic",
+    "badge": "Psychic Badge",
+    "team": [
+      "Psyduck",
+      "Espathra",
+      "Indeedee",
+      "Roaring Moon"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 6,
+    "leader": "Tulip",
+    "city": "Cascarrafa",
+    "type": "Fighting",
+    "badge": "Fighting Badge",
+    "team": [
+      "Oinkologne",
+      "Annihilape",
+      "Farigiraf"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 7,
+    "leader": "Grusha",
+    "city": "Glaseado Mountain",
+    "type": "Dragon",
+    "badge": "Dragon Badge",
+    "team": [
+      "Baxcalibur",
+      "Flutter Mane",
+      "Garganacl",
+      "Dragonite"
+    ]
+  },
+  {
+    "game": "scarlet",
+    "gym_number": 8,
+    "leader": "Geeta",
+    "city": "Levincia Stadium",
+    "type": "Ground",
+    "badge": "Ground Badge",
+    "team": [
+      "Tinkatink",
+      "Furnifrass",
+      "Mabosstiff",
+      "Roaring Moon"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 1,
+    "leader": "Katy",
+    "city": "Cortondo",
+    "type": "Normal",
+    "badge": "Normal Badge",
+    "team": [
+      "Lechonk",
+      "Pawmi",
+      "Smoliv"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 2,
+    "leader": "Brassius",
+    "city": "Artazon",
+    "type": "Grass",
+    "badge": "Grass Badge",
+    "team": [
+      "Smoliv",
+      "Bramblin",
+      "Meowscarada"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 3,
+    "leader": "Iono",
+    "city": "Levincia",
+    "type": "Electric",
+    "badge": "Electric Badge",
+    "team": [
+      "Pawmi",
+      "Electrike",
+      "Klawf",
+      "Tinkatink"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 4,
+    "leader": "Kofu",
+    "city": "Porto Marinada",
+    "type": "Water",
+    "badge": "Water Badge",
+    "team": [
+      "Quaxly",
+      "Palafin",
+      "Wugtrub",
+      "Clodsire"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 5,
+    "leader": "Ryme",
+    "city": "Meditown",
+    "type": "Psychic",
+    "badge": "Psychic Badge",
+    "team": [
+      "Psyduck",
+      "Espathra",
+      "Indeedee",
+      "Roaring Moon"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 6,
+    "leader": "Tulip",
+    "city": "Cascarrafa",
+    "type": "Fighting",
+    "badge": "Fighting Badge",
+    "team": [
+      "Oinkologne",
+      "Annihilape",
+      "Farigiraf"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 7,
+    "leader": "Grusha",
+    "city": "Glaseado Mountain",
+    "type": "Dragon",
+    "badge": "Dragon Badge",
+    "team": [
+      "Baxcalibur",
+      "Flutter Mane",
+      "Garganacl",
+      "Dragonite"
+    ]
+  },
+  {
+    "game": "violet",
+    "gym_number": 8,
+    "leader": "Geeta",
+    "city": "Levincia Stadium",
+    "type": "Ground",
+    "badge": "Ground Badge",
+    "team": [
+      "Tinkatink",
+      "Furnifrass",
+      "Mabosstiff",
+      "Roaring Moon"
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "game": "gold",
+    "item": "fast ball",
+    "notes": "Kurt crafts this from a Red Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "red apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "silver",
+    "item": "fast ball",
+    "notes": "Kurt crafts this from a Red Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "red apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "crystal",
+    "item": "fast ball",
+    "notes": "Kurt crafts this from a Red Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "red apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "heart gold",
+    "item": "fast ball",
+    "notes": "Kurt crafts this from a Red Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "red apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "soul silver",
+    "item": "fast ball",
+    "notes": "Kurt crafts this from a Red Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "red apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "gold",
+    "item": "lure ball",
+    "notes": "Kurt crafts this from a Blue Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "blue apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "silver",
+    "item": "lure ball",
+    "notes": "Kurt crafts this from a Blue Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "blue apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "crystal",
+    "item": "lure ball",
+    "notes": "Kurt crafts this from a Blue Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "blue apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "heart gold",
+    "item": "lure ball",
+    "notes": "Kurt crafts this from a Blue Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "blue apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "soul silver",
+    "item": "lure ball",
+    "notes": "Kurt crafts this from a Blue Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "blue apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "gold",
+    "item": "moon ball",
+    "notes": "Kurt crafts this from a Yellow Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "yellow apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "silver",
+    "item": "moon ball",
+    "notes": "Kurt crafts this from a Yellow Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "yellow apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "crystal",
+    "item": "moon ball",
+    "notes": "Kurt crafts this from a Yellow Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "yellow apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "heart gold",
+    "item": "moon ball",
+    "notes": "Kurt crafts this from a Yellow Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "yellow apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "soul silver",
+    "item": "moon ball",
+    "notes": "Kurt crafts this from a Yellow Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "yellow apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "gold",
+    "item": "friend ball",
+    "notes": "Kurt crafts this from a Green Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "green apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "silver",
+    "item": "friend ball",
+    "notes": "Kurt crafts this from a Green Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "green apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "crystal",
+    "item": "friend ball",
+    "notes": "Kurt crafts this from a Green Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "green apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "heart gold",
+    "item": "friend ball",
+    "notes": "Kurt crafts this from a Green Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "green apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "soul silver",
+    "item": "friend ball",
+    "notes": "Kurt crafts this from a Green Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "green apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "gold",
+    "item": "love ball",
+    "notes": "Kurt crafts this from a Pink Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "pink apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "silver",
+    "item": "love ball",
+    "notes": "Kurt crafts this from a Pink Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "pink apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "crystal",
+    "item": "love ball",
+    "notes": "Kurt crafts this from a Pink Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "pink apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "heart gold",
+    "item": "love ball",
+    "notes": "Kurt crafts this from a Pink Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "pink apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "soul silver",
+    "item": "love ball",
+    "notes": "Kurt crafts this from a Pink Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "pink apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "gold",
+    "item": "heavy ball",
+    "notes": "Kurt crafts this from a Black Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "black apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "silver",
+    "item": "heavy ball",
+    "notes": "Kurt crafts this from a Black Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "black apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "crystal",
+    "item": "heavy ball",
+    "notes": "Kurt crafts this from a Black Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "black apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "heart gold",
+    "item": "heavy ball",
+    "notes": "Kurt crafts this from a Black Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "black apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "soul silver",
+    "item": "heavy ball",
+    "notes": "Kurt crafts this from a Black Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "black apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "gold",
+    "item": "level ball",
+    "notes": "Kurt crafts this from a White Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "white apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "silver",
+    "item": "level ball",
+    "notes": "Kurt crafts this from a White Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "white apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "crystal",
+    "item": "level ball",
+    "notes": "Kurt crafts this from a White Apricorn in Generation 2.",
+    "ingredients": [
+      {"name": "white apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "heart gold",
+    "item": "level ball",
+    "notes": "Kurt crafts this from a White Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "white apricorn", "quantity": 1}
+    ]
+  },
+  {
+    "game": "soul silver",
+    "item": "level ball",
+    "notes": "Kurt crafts this from a White Apricorn in HeartGold and SoulSilver.",
+    "ingredients": [
+      {"name": "white apricorn", "quantity": 1}
+    ]
+  }
+]

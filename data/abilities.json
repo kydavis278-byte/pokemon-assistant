@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Mold Breaker",
+    "generation": "Gen 4+",
+    "effect": "Moves ignore target abilities when attacking."
+  },
+  {
+    "id": 2,
+    "name": "Overgrow",
+    "generation": "Gen 3+",
+    "effect": "Grass-type moves increase in power when HP is low."
+  },
+  {
+    "id": 3,
+    "name": "Blaze",
+    "generation": "Gen 3+",
+    "effect": "Fire-type moves increase in power when HP is low."
+  }
+]
