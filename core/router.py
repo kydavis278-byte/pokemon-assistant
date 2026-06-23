@@ -187,6 +187,15 @@ def _extract_encounter_pokemon(text):
         r"where do i catch",
         r"where can i encounter",
         r"where do i encounter",
+        r"can i find",
+        r"can you find",
+        r"can we find",
+        r"can i catch",
+        r"can you catch",
+        r"can we catch",
+        r"can i encounter",
+        r"can you encounter",
+        r"can we encounter",
     ]
     prefix_pattern = "|".join(prefixes)
     match = re.search(rf"^(?:{prefix_pattern})\s+(.+)$", text)
@@ -219,6 +228,7 @@ def _extract_gym_number(text):
 def score_intents(text):
     scores = {
         "ability": 0,
+        "pokemon_abilities": 0,
         "pokemon": 0,
         "move": 0,
         "multi_filter": 0,
@@ -242,7 +252,7 @@ def score_intents(text):
 
     pokemon_moves_match = bool(re.search(r"\bwhat moves (?:can|does) .+ learn\b", text))
     move_learners_match = bool(re.search(r"\bwhat pokemon (?:can )?learn (?:the )?(?:move )?.+\b", text))
-    ability_learners_match = bool(re.search(r"\bwhat pokemon (?:can )?(?:have|has|get) .+\b", text)) and not bool(re.search(r"\begg groups?\b", text))
+    ability_learners_match = bool(re.search(r"\bwhat pokemon (?:can )?(?:have|has|get) .+\b", text)) and not bool(re.search(r"\begg groups?\b", text)) and not bool(re.search(r"\blearn\b", text))
 
     if pokemon_moves_match:
         scores["pokemon_moves"] += 10
@@ -250,6 +260,14 @@ def score_intents(text):
         scores["move_learners"] += 10
     if ability_learners_match:
         scores["ability_learners"] += 10
+
+    pokemon_abilities_match = bool(
+        re.search(r"\bwhat\s+abilities\s+does\s+.+\s+have\b", text)
+        or re.search(r"\b(?:ability|abilities)\s+of\s+.+$", text)
+        or re.search(r"^[a-z0-9\- ]+\s+(?:ability|abilities)$", text)
+    )
+    if pokemon_abilities_match:
+        scores["pokemon_abilities"] += 14
 
     catch_games_match = bool(
         re.search(r"\bwhat games (?:can you|can i|can we)?\s*catch\s+.+\s+in\b", text)
@@ -279,7 +297,11 @@ def score_intents(text):
         )
     )
     has_type = bool(re.search(r"\b(?:normal|fire|water|electric|grass|ice|fighting|poison|ground|flying|psychic|bug|rock|ghost|dragon|dark|steel|fairy)\s+type\b", text))
-    has_ability_like = bool(re.search(r"\bwith\s+[a-z0-9 -]+\b", text)) and not has_egg or bool(re.search(r"\bcan\s+have\s+[a-z0-9 -]+\b", text))
+    has_ability_like = (
+        (bool(re.search(r"\bwith\s+[a-z0-9 -]+\b", text)) and not has_egg)
+        or bool(re.search(r"\bcan\s+have\s+[a-z0-9 -]+\b", text))
+        or bool(re.search(r"\bhave\s+[a-z0-9 -]+\b", text))
+    )
     has_egg_intersection = has_egg and (bool(re.search(r"\bshare\b", text)) or bool(re.search(r"\band\b", text)))
 
     if "pokemon" in text and (
@@ -338,10 +360,13 @@ def score_intents(text):
 
 
 def get_intent(text):
-    # Route natural pokemon-ability lookups to pokemon details, not ability encyclopedia.
-    # Examples: "what abilities does gyarados have", "ability of charizard".
+    # Route natural pokemon-ability lookups to pokemon ability list responses.
+    # Examples: "what abilities does gyarados have", "ability of charizard", "garchomp abilities".
     if re.search(r"\bwhat\s+abilities\s+does\s+.+\s+have\b", text) or re.search(r"\bability\s+of\s+.+$", text) or re.search(r"\babilities\s+of\s+.+$", text):
-        return "pokemon"
+        return "pokemon_abilities"
+
+    if re.search(r"^[a-z0-9\- ]+\s+(?:ability|abilities)$", text):
+        return "pokemon_abilities"
 
     scores = score_intents(text)
     best = max(scores, key=scores.get)
@@ -356,6 +381,19 @@ def _strip_noise(text, noise):
 
 
 def get_entity(text, intent):
+    if intent == "pokemon_abilities":
+        t = text.strip()
+        have_match = re.search(r"\bwhat\s+abilities\s+does\s+(.+?)\s+have\b", t)
+        if have_match:
+            return _strip_noise(have_match.group(1).strip(), ["the", "pokemon"])
+
+        of_match = re.search(r"\b(?:ability|abilities)\s+of\s+(.+)$", t)
+        if of_match:
+            return _strip_noise(of_match.group(1).strip(), ["the", "pokemon"])
+
+        t = re.sub(r"\b(?:ability|abilities)\b", "", t).strip()
+        return _strip_noise(t, ["what", "is", "are", "the", "pokemon"])
+
     if intent == "pokemon_presence":
         game, t = _extract_game(text, allow_tail=False)
         match = re.search(r"^is\s+(.+?)\s+in\b", text)

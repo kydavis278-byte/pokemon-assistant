@@ -108,8 +108,6 @@ class TestRouterIntentExtraction(unittest.TestCase):
             ("pokemon pikachu", "pokemon", "pikachu"),
             ("tell me about garchomp", "pokemon", "garchomp"),
             ("charizard info", "pokemon", "charizard"),
-            ("ability of gyarados", "pokemon", "gyarados"),
-            ("what abilities does gyarados have", "pokemon", "gyarados"),
             ("mega swampert", "pokemon", "mega swampert"),
             ("alolan raichu", "pokemon", "alolan raichu"),
             ("hisuian zoroark", "pokemon", "hisuian zoroark"),
@@ -120,6 +118,29 @@ class TestRouterIntentExtraction(unittest.TestCase):
                 parsed = parse(text)
                 self.assertEqual(parsed["intent"], expected_intent)
                 self.assertEqual(parsed["entity"], expected_entity)
+
+    def test_pokemon_abilities_queries(self):
+        cases = [
+            ("ability of gyarados", "pokemon_abilities", "gyarados"),
+            ("what abilities does gyarados have", "pokemon_abilities", "gyarados"),
+            ("garchomp ability", "pokemon_abilities", "garchomp"),
+            ("garchomp abilities", "pokemon_abilities", "garchomp"),
+        ]
+        for text, expected_intent, expected_entity in cases:
+            with self.subTest(text=text):
+                parsed = parse(text)
+                self.assertEqual(parsed["intent"], expected_intent)
+                self.assertEqual(parsed["entity"], expected_entity)
+
+    def test_pokemon_abilities_response_format(self):
+        from core.assistant import handle_query_with_context
+
+        text, _ = handle_query_with_context("garchomp abilities")
+        self.assertIn("Abilities:", text)
+        self.assertIn("Hidden Abilities:", text)
+        self.assertNotIn("Type:", text)
+        self.assertNotIn("Stats:", text)
+        self.assertNotIn("Base experience:", text)
 
     def test_location_queries(self):
         cases = [
@@ -150,6 +171,11 @@ class TestRouterIntentExtraction(unittest.TestCase):
             ),
             (
                 "where can I find pidgey in fire red",
+                "location",
+                {"pokemon": "pidgey", "game": "firered"},
+            ),
+            (
+                "can you catch a pidgey in fire red",
                 "location",
                 {"pokemon": "pidgey", "game": "firered"},
             ),
@@ -445,6 +471,11 @@ class TestRouterIntentExtraction(unittest.TestCase):
                 "multi_filter",
                 {"query": "water 1 pokemon that can learn surf", "game": None},
             ),
+            (
+                "what pokemon have mold breaker that can learn bite",
+                "multi_filter",
+                {"query": "what pokemon have mold breaker that can learn bite", "game": None},
+            ),
         ]
         for text, expected_intent, expected_entity in cases:
             with self.subTest(text=text):
@@ -468,6 +499,14 @@ class TestRouterIntentExtraction(unittest.TestCase):
         typo_text, _ = handle_query_with_context("pokemon with water bubble that can lurn surf")
         self.assertIn("Araquanid", typo_text)
 
+        have_ability_text, _ = handle_query_with_context("what pokemon have mold breaker that can learn bite")
+        self.assertIn("Pokemon matching qualifiers:", have_ability_text)
+        self.assertNotIn("Ability not found.", have_ability_text)
+
+        have_ability_and_text, _ = handle_query_with_context("what pokemon have mold breaker and can learn bite")
+        self.assertIn("Pokemon matching qualifiers:", have_ability_and_text)
+        self.assertNotIn("Ability not found.", have_ability_and_text)
+
     def test_effect_queries_are_consistent_and_no_followup_prompt(self):
         from core.assistant import handle_query_with_context, handle_followup
 
@@ -480,7 +519,7 @@ class TestRouterIntentExtraction(unittest.TestCase):
 
         more_text, _ = handle_followup(kings_ctx, "yes")
         self.assertIn("More:\n", more_text)
-        self.assertIn("\n\n", more_text)
+        self.assertLess(len(more_text), 480)
 
         wonder_plain, _ = handle_query_with_context("wonder guard")
         wonder_what, _ = handle_query_with_context("what does wonder guard do")
@@ -497,6 +536,42 @@ class TestRouterIntentExtraction(unittest.TestCase):
         self.assertEqual(intimidate_plain, intimidate_what)
         self.assertIn("Intimidate", intimidate_plain)
 
+    def test_lookup_outputs_include_type_header(self):
+        from core.assistant import handle_query_with_context
+
+        ability_text, _ = handle_query_with_context("what does no guard do")
+        item_text, _ = handle_query_with_context("what is weakness policy")
+        move_text, _ = handle_query_with_context("flamethrower")
+
+        self.assertTrue(ability_text.startswith("Type: Ability\n"))
+        self.assertTrue(item_text.startswith("Type: Item\n"))
+        self.assertTrue(move_text.startswith("Type: Move\n"))
+
+    def test_ability_followup_prompt_and_yes_output(self):
+        from core.assistant import handle_query_with_context, handle_followup
+
+        text, ctx = handle_query_with_context("what does mold breaker do")
+        self.assertIn("Would you like to know more about this ability?", text)
+        self.assertIsNotNone(ctx)
+
+        yes_text, yes_ctx = handle_followup(ctx, "yes")
+        self.assertIn("More:\n", yes_text)
+        self.assertNotIn("Example:", yes_text)
+        self.assertLess(len(yes_text), 480)
+        self.assertIsNone(yes_ctx)
+
+    def test_move_key_effect_priority_and_info_suffix(self):
+        from core.assistant import handle_query_with_context
+
+        move_text, move_ctx = handle_query_with_context("baneful bunker")
+        self.assertIn("Type: Move", move_text)
+        self.assertIn("poison", move_text.lower())
+        self.assertNotIn("Effect: Grants the user protection for the rest of the turn.", move_text)
+        self.assertIsNotNone(move_ctx)
+
+        info_text, _ = handle_query_with_context("baneful bunker info")
+        self.assertIn("Type: Move", info_text)
+
     def test_intimidate_parsing_not_corrupted(self):
         parsed = parse("what does intimidate do")
         self.assertEqual(parsed["intent"], "ability")
@@ -507,7 +582,9 @@ class TestRouterIntentExtraction(unittest.TestCase):
 
         z_move, _ = handle_query_with_context("acid downpour physical")
         self.assertIn("(Z-Move)", z_move)
-        self.assertIn("Acid Downpour Physical", z_move.split("\n", 1)[0])
+        z_lines = z_move.split("\n")
+        self.assertEqual("Type: Move", z_lines[0])
+        self.assertIn("Acid Downpour Physical", z_lines[1])
         self.assertNotIn("  Physical", z_move)
 
         g_move, _ = handle_query_with_context("max flare")

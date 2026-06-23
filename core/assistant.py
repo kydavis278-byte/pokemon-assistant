@@ -1059,17 +1059,125 @@ def _split_effect_text(effect):
     return summary, remainder, example
 
 
-def _effect_more_text(effect):
-    raw = (effect or "").strip()
+def _normalize_sentence_for_match(text):
+    return re.sub(r"\s+", " ", (text or "").strip().lower()).rstrip(".?!")
+
+
+def _sentence_priority_score(sentence):
+    s = _normalize_sentence_for_match(sentence)
+    if not s:
+        return -999
+
+    score = 0
+
+    # De-prioritize generic boilerplate that often hides the actual key mechanic.
+    generic_patterns = [
+        r"^inflicts regular damage$",
+        r"^grants the user protection for the rest of the turn$",
+        r"^the user protects itself from all effects of moves that target it during this turn$",
+        r"^no effect text$",
+    ]
+    for pat in generic_patterns:
+        if re.search(pat, s):
+            score -= 8
+
+    # De-prioritize non-battle metadata in default summaries.
+    if "overworld" in s or "wild encounter rate" in s:
+        score -= 10
+
+    # Prioritize important battle-impact mechanics.
+    priority_tokens = [
+        "if ", "when ", "contact", "poison", "burn", "paraly", "freeze", "flinch", "faint",
+        "priority", "critical", "ignore", "bypass", "prevent", "cannot", "immune", "resist",
+        "double", "halve", "raise", "lower", "boost", "switch", "recoil", "heal", "recover",
+        "trap", "protect", "shield", "status", "stat", "stage",
+    ]
+    for tok in priority_tokens:
+        if tok in s:
+            score += 2
+
+    # Slight bonus for conditional logic; these sentences tend to encode the real rule.
+    if re.search(r"\bif\b|\bwhen\b|\bunless\b", s):
+        score += 2
+
+    # Prefer concise, directly actionable lines.
+    if len(s) <= 170:
+        score += 1
+    if len(s) > 260:
+        score -= 1
+
+    return score
+
+
+def _best_effect_summary(effect, short_effect=None):
+    full_sentences = _split_sentences(effect)
+    if not full_sentences:
+        short = _short_effect_summary(short_effect)
+        return short or "No effect text."
+
+    best_sentence = max(full_sentences, key=_sentence_priority_score)
+    short = _short_effect_summary(short_effect)
+    if short and _sentence_priority_score(short) >= _sentence_priority_score(best_sentence):
+        return short
+    return best_sentence
+
+
+def _effect_more_text(effect, used_summary=None):
+    raw = re.sub(r"\s+", " ", (effect or "").strip())
     if not raw:
         return ""
 
-    # Keep original spacing/newlines from source text; remove only the first sentence.
-    first_sentence = re.search(r"[.!?](?:\s|$)", raw)
-    if not first_sentence:
-        return raw
-    remainder = raw[first_sentence.end():].lstrip()
-    return remainder if remainder else raw
+    sentences = _split_sentences(raw)
+    if not sentences:
+        return ""
+
+    if used_summary:
+        normalized_summary = _normalize_sentence_for_match(used_summary)
+        removed = False
+        kept = []
+        for sentence in sentences:
+            if not removed and _normalize_sentence_for_match(sentence) == normalized_summary:
+                removed = True
+                continue
+            kept.append(sentence)
+        sentences = kept if kept else sentences[1:]
+    else:
+        sentences = sentences[1:]
+
+    if not sentences:
+        return ""
+
+    remainder = " ".join(sentences).strip()
+
+    sentences = _split_sentences(remainder)
+    if sentences and re.match(r"^(for example|for instance|e\.g\.)\b", sentences[0], flags=re.IGNORECASE):
+        remainder = " ".join(sentences[1:]).strip() or sentences[0]
+
+    return _trim_more_text(remainder)
+
+
+def _split_sentences(text):
+    cleaned = re.sub(r"\s+", " ", (text or "").strip())
+    if not cleaned:
+        return []
+    parts = re.split(r"(?<=[.!?])\s+", cleaned)
+    return [p.strip() for p in parts if p and re.search(r"[A-Za-z0-9]", p)]
+
+
+def _trim_more_text(text, max_sentences=2, max_chars=280):
+    sentences = _split_sentences(text)
+    if not sentences:
+        return ""
+
+    compact = " ".join(sentences[:max_sentences]).strip()
+    if len(compact) <= max_chars:
+        return compact
+
+    clipped = compact[:max_chars].rstrip()
+    last_space = clipped.rfind(" ")
+    if last_space > 40:
+        clipped = clipped[:last_space].rstrip()
+    return clipped + "..."
 
 
 def _short_effect_summary(value):
@@ -1098,15 +1206,9 @@ def _count_sentences(text):
 
 
 def _make_followup_prompt(name, subject_type, summary, more, example):
-    if example and more:
-        prompt = f"{name}: {summary}\nWould you like an example or more details about this {subject_type}?"
-    elif example:
-        prompt = f"{name}: {summary}\nWould you like an example about this {subject_type}?"
-    elif more:
-        prompt = f"{name}: {summary}\nWould you like more details about this {subject_type}?"
-    else:
+    if not (example or more):
         return None
-    return prompt
+    return f"{name}: {summary}\nWould you like to know more about this {subject_type}?"
 
 
 def handle_ability_context(entity):
@@ -1118,14 +1220,14 @@ def handle_ability_context(entity):
     short_effect = _short_effect_summary(row['short_effect'] if row['short_effect'] is not None else '')
     name = row['name'].title() if row['name'] else 'Ability'
     summary, more, example = _split_effect_text(effect)
-    more_text = _effect_more_text(effect)
-    core_summary = short_effect or summary or _effect_summary(effect)
+    core_summary = _best_effect_summary(effect, short_effect)
+    more_text = _effect_more_text(effect, used_summary=core_summary)
     sentence_count = _count_sentences(effect)
 
     if sentence_count >= 3 and (more_text or example):
         prompt = _make_followup_prompt(name, 'ability', core_summary, more, example)
         if prompt:
-            return prompt, {
+            return f"Type: Ability\n{prompt}", {
                 'type': 'followup',
                 'category': 'ability',
                 'name': name,
@@ -1133,7 +1235,7 @@ def handle_ability_context(entity):
                 'example': example,
             }
 
-    return f"{name}: {core_summary}", None
+    return f"Type: Ability\n{name}: {core_summary}", None
 
 
 def handle_move_context(entity):
@@ -1145,22 +1247,24 @@ def handle_move_context(entity):
     name = _normalize_move_name(row['name']).title() if row['name'] else 'Move'
     move_label = _move_label_line(row['name'])
     summary, more, example = _split_effect_text(effect)
-    more_text = _effect_more_text(effect)
+    core_summary = _best_effect_summary(effect)
+    more_text = _effect_more_text(effect, used_summary=core_summary)
     sentence_count = _count_sentences(effect)
 
     if sentence_count >= 3 and (more_text or example):
         type_name = (row['type'] or 'unknown').replace('-', ' ').title() if row['type'] else 'Unknown'
         category_name = (row['category'] or 'unknown').replace('-', ' ').title() if row['category'] else 'Unknown'
         prompt_lines = [
+            "Type: Move",
             f"{name} ({type_name} {category_name})",
         ]
         if move_label:
             prompt_lines.append(move_label)
         prompt_lines.extend([
             f"Power: {row['power'] if row['power'] is not None else '—'} | Accuracy: {row['accuracy'] if row['accuracy'] is not None else '—'} | PP: {row['pp'] if row['pp'] is not None else '—'}",
-            f"Effect: {summary or _effect_summary(effect)}",
+            f"Effect: {core_summary}",
         ])
-        question = _make_followup_prompt(name, 'move', summary or _effect_summary(effect), more_text, example)
+        question = _make_followup_prompt(name, 'move', core_summary, more_text, example)
         if question:
             prompt_lines.append(question.split("\n", 1)[1])
             return "\n".join(prompt_lines), {
@@ -1171,7 +1275,7 @@ def handle_move_context(entity):
                 'example': example,
             }
 
-    return format_response("move", row), None
+    return f"Type: Move\n{format_response('move', row)}", None
 
 
 def handle_item_context(entity):
@@ -1182,13 +1286,14 @@ def handle_item_context(entity):
     effect = row['effect'] if row['effect'] is not None else row['short_effect'] if row['short_effect'] is not None else ''
     name = row['name'].title() if row['name'] else 'Item'
     summary, more, example = _split_effect_text(effect)
-    more_text = _effect_more_text(effect)
+    core_summary = _best_effect_summary(effect, row['short_effect'] if row['short_effect'] is not None else '')
+    more_text = _effect_more_text(effect, used_summary=core_summary)
     sentence_count = _count_sentences(effect)
 
     if sentence_count >= 3 and (more_text or example):
-        prompt = _make_followup_prompt(name, 'item', summary or _effect_summary(effect), more_text, example)
+        prompt = _make_followup_prompt(name, 'item', core_summary, more_text, example)
         if prompt:
-            return prompt, {
+            return f"Type: Item\n{prompt}", {
                 'type': 'followup',
                 'category': 'item',
                 'name': name,
@@ -1196,7 +1301,7 @@ def handle_item_context(entity):
                 'example': example,
             }
 
-    return f"{name}: {_effect_summary(effect)}", None
+    return f"Type: Item\n{name}: {core_summary}", None
 
 
 def _select_latest_game_for_pokemon(pokemon_name):
@@ -1717,6 +1822,12 @@ def _extract_multi_filters(query_text):
         if "egg group" not in candidate and not re.search(r"\btype\b", candidate):
             ability_filter = candidate
 
+    have_match = re.search(r"\bhave\s+(.+?)(?=\s+(?:and\b|can\s+learn|learn|in\b|that\b|who\b|which\b)|$)", q)
+    if have_match and not ability_filter:
+        candidate = have_match.group(1).strip()
+        if "egg group" not in candidate and not re.search(r"\btype\b", candidate):
+            ability_filter = candidate
+
     return {
         "types": [t for t in type_filters if t],
         "egg_groups": [g for g in egg_group_filters if g],
@@ -1947,17 +2058,10 @@ def handle_followup(context, user_input):
     negative = bool(re.search(r"\b(no|not now|nah)\b", answer))
 
     if wants_both or wants_affirmative:
-        if context.get('example') and context.get('more'):
-            parts = []
-            if context['example']:
-                parts.append(f"Example: {context['example']}")
-            if context['more']:
-                parts.append(f"More:\n{context['more']}")
-            return "\n".join(parts), None
-        if context.get('example'):
-            return f"Example: {context['example']}", None
         if context.get('more'):
             return f"More:\n{context['more']}", None
+        if context.get('example'):
+            return f"Example: {context['example']}", None
         return "Okay.", None
 
     if wants_example:
@@ -2043,6 +2147,13 @@ def handle_query_with_context(text):
     else:
         response, followup = result, None
 
+    if handler == handle_pokemon and response == "Pokémon not found." and isinstance(entity, str):
+        fallback_entity = re.sub(r"\binfo\b", "", entity, flags=re.IGNORECASE).strip() or entity.strip()
+        for resolver in (handle_ability_context, handle_move_context, handle_item_context):
+            candidate_response, candidate_followup = resolver(fallback_entity)
+            if candidate_response is not None:
+                return candidate_response, candidate_followup
+
     # For unknown intent, only try location fallback after direct entity lookup
     # has failed. This avoids pokemon names like "diglett" being hijacked by
     # location names like "digletts cave".
@@ -2054,6 +2165,13 @@ def handle_query_with_context(text):
                 candidate_response, candidate_followup = resolver(entity)
                 if candidate_response is not None:
                     return candidate_response, candidate_followup
+
+            simplified_entity = re.sub(r"^(?:what\s+is|what\s+are|what\s+does|tell\s+me\s+about)\s+", "", entity.strip(), flags=re.IGNORECASE)
+            if simplified_entity and simplified_entity.lower() != entity.strip().lower():
+                for resolver in (handle_ability_context, handle_move_context, handle_item_context):
+                    candidate_response, candidate_followup = resolver(simplified_entity)
+                    if candidate_response is not None:
+                        return candidate_response, candidate_followup
 
             if re.match(r"^(?:g\s*max|gmax|max|g)\s+[a-z0-9][a-z0-9\s-]*$", entity.strip().lower()):
                 return "Move not found.", None
@@ -2155,17 +2273,20 @@ def handle_location_followup(context, user_input):
     game = user_input.strip()
     if not game:
         return "Please specify a game.", context
-    game_key = _normalize_game_key(game)
-    normalized_game = game_key.replace(' ', '')
-    exact_game = game_key
-    hyphen_game = game_key.replace(' ', '-')
+    normalized_game = game.lower().replace(' ', '')
+    exact_game = game.lower().replace(' ', '')
+    hyphen_game = game.lower().replace(' ', '-')
     exact_rows = fetch_all(
         "SELECT * FROM encounters WHERE (lower(location_name) LIKE ? OR lower(location_area) LIKE ?) AND (lower(game)=? OR lower(game)=? OR lower(game)=?) ORDER BY game, location_name, pokemon",
         (f"%{location.lower()}%", f"%{location.lower()}%", exact_game, hyphen_game, game.lower())
     )
     if exact_rows:
         return format_response("location", exact_rows), None
-    return f"There are no Pokemon encounters for {location.title()} in {_display_game_name(game_key)}.", context
+    query = "SELECT * FROM encounters WHERE (lower(location_name) LIKE ? OR lower(location_area) LIKE ?) AND (lower(game) LIKE ? OR lower(game) LIKE ?) ORDER BY game, location_name, pokemon"
+    rows = fetch_all(query, (f"%{location.lower()}%", f"%{location.lower()}%", f"%{normalized_game}%", f"%{hyphen_game}%"))
+    if rows:
+        return format_response("location", rows), None
+    return f"No Pokémon found for {location.title()} in {game.title()}.", context
 
 
 def interactive_handle(text, last_context=None):
@@ -2203,6 +2324,33 @@ def handle_pokemon(entity):
     return response
 
 
+def handle_pokemon_abilities(entity):
+    row = _find_by_name("pokemon", entity)
+    if not row:
+        return "Pokémon not found."
+
+    hidden_ability = row['hidden_ability']
+    hidden_key = str(hidden_ability).strip().lower() if hidden_ability else None
+
+    seen = set()
+    regular = []
+    for ability in [row['ability_1'], row['ability_2']]:
+        if not ability:
+            continue
+        key = str(ability).strip().lower()
+        if hidden_key and key == hidden_key:
+            continue
+        if key in seen:
+            continue
+        seen.add(key)
+        regular.append(ability.title())
+
+    lines = [f"Abilities: {', '.join(regular) if regular else 'Unknown'}"]
+    if hidden_ability:
+        lines.append(f"Hidden Abilities: {hidden_ability.title()}")
+    return "\n".join(lines)
+
+
 def handle_move(entity):
     row = _find_by_name("moves", entity)
     return format_response("move", row) if row else "Move not found."
@@ -2220,13 +2368,15 @@ def handle_location(entity):
         query = "SELECT game, route, location_name, location_area, pokemon, chance, method FROM encounters WHERE lower(pokemon)=?"
         params = [pokemon_name.lower()]
         if game:
-            game_key = _normalize_game_key(game)
-            normalized_game = game_key.replace(' ', '')
-            exact_game = game_key
-            hyphen_game = game_key.replace(' ', '-')
+            normalized_game = game.lower().replace(' ', '')
+            exact_game = game.lower().replace(' ', '')
+            hyphen_game = game.lower().replace(' ', '-')
             query += " AND (lower(game)=? OR lower(game)=? OR lower(game)=?)"
-            params.extend([exact_game, hyphen_game, normalized_game])
+            params.extend([exact_game, hyphen_game, game.lower()])
         rows = fetch_all(query + " ORDER BY game, route, chance DESC, method", tuple(params))
+        if not rows and game:
+            query = "SELECT game, route, location_name, location_area, pokemon, chance, method FROM encounters WHERE lower(pokemon)=? AND (lower(game) LIKE ? OR lower(game) LIKE ?)"
+            rows = fetch_all(query + " ORDER BY game, route, chance DESC, method", (pokemon_name.lower(), f"%{game.lower().replace(' ', '')}%", f"%{game.lower().replace(' ', '-')}%"))
         if not rows:
             if game:
                 support_rows = fetch_all(
@@ -2311,17 +2461,18 @@ def handle_location(entity):
     params = [f"%{location_name.lower()}%", f"%{location_name.lower()}%"]
 
     if game:
-        game_key = _normalize_game_key(game)
-        normalized_game = game_key.replace(' ', '')
-        exact_game = game_key
-        hyphen_game = game_key.replace(' ', '-')
+        normalized_game = game.lower().replace(' ', '')
+        exact_game = game.lower().replace(' ', '')
+        hyphen_game = game.lower().replace(' ', '-')
         exact_rows = fetch_all(
             query + " AND (lower(game)=? OR lower(game)=? OR lower(game)=?) ORDER BY game, location_name, pokemon",
-            (f"%{location_name.lower()}%", f"%{location_name.lower()}%", exact_game, hyphen_game, normalized_game)
+            (f"%{location_name.lower()}%", f"%{location_name.lower()}%", exact_game, hyphen_game, game.lower())
         )
         if exact_rows:
             return format_response("location", exact_rows), None
-        return f"There are no Pokemon encounters for {location_name.title()} in {_display_game_name(game_key)}.", None
+        query += " AND (lower(game) LIKE ? OR lower(game) LIKE ?)"
+        params.append(f"%{normalized_game}%")
+        params.append(f"%{hyphen_game}%")
 
     rows = fetch_all(query + " ORDER BY game, location_name, pokemon", tuple(params))
     if rows:
@@ -2554,6 +2705,7 @@ def handle_unknown(entity):
 
 HANDLERS = {
     "ability": handle_ability,
+    "pokemon_abilities": handle_pokemon_abilities,
     "pokemon": handle_pokemon,
     "move": handle_move,
     "multi_filter": handle_multi_filter,
